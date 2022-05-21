@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Seek</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+  </head>
+
+<body style="font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 15px; text-align: center; color: aliceblue;">
+
+  <!--<div class="bg-image"></div>-->
+
+
+<form action="" method="post" style="font-size: large; ">
+
+  <button type="submit" name="left" id="bu" value="True" class="btn btn-success btn-lg"> Left </button> 
+  <div id="hh"> </div>
+  <button type="submit" name="right" id="bu" value="True" class="btn btn-success btn-lg"> Right </button> 
+
+</form>
+
+
+
+<style>
+  
+.bg-image {
+  /* The image used */
+  background-image: url("{{ url_for('static', filename='gg.jpg') }}");
+  position: absolute;
+  z-index: -100;
+
+  /* Add the blur effect */
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+
+  /* Full height */
+  height: 98vh;
+  width: 98vw;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hh{
+  height: 800px;
+}
+#bu{
+  height: 300px;
+  width: 300px;
+  margin-top: 10%;
+  transform: rotate(90deg);
+
+  font-size: 100px;
+}
+</style>
+
+</body>
+</html>
