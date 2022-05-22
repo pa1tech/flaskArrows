@@ -5,10 +5,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
   </head>
 
-<body style="font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 15px; text-align: center; color: aliceblue;">
-
-  <!--<div class="bg-image"></div>-->
-
+<body style="background-color: #ffe77aff; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 15px; text-align: center; color: aliceblue;">
 
 <form action="" method="post" style="font-size: large; ">
 
@@ -21,27 +18,7 @@
 
 
 <style>
-  
-.bg-image {
-  /* The image used */
-  background-image: url("{{ url_for('static', filename='gg.jpg') }}");
-  position: absolute;
-  z-index: -100;
-
-  /* Add the blur effect */
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
-
-  /* Full height */
-  height: 98vh;
-  width: 98vw;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
+ 
 #hh{
   height: 800px;
 }
@@ -50,7 +27,7 @@
   width: 300px;
   margin-top: 10%;
   transform: rotate(90deg);
-
+  background-color: #2c5f2dff;
   font-size: 100px;
 }
 </style>
