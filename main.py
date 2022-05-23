@@ -14,6 +14,8 @@ def index():
             wsh.SendKeys("{LEFT}")
         if request.form.get('right') == 'True':
             wsh.SendKeys("{RIGHT}")
+        if request.form.get('space') == 'True':
+            wsh.SendKeys(" ")
     return render_template('index.html')
 
 if __name__ == '__main__':
